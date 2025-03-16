@@ -191,4 +191,8 @@ footer a:visited {
         width: 100%;
         text-align: center;
     }
+
+    picture img {
+        max-width: 100px;
+    }
 }
