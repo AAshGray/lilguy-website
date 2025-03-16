@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LilGuy Installation and Usage</title>
+    <title>Lilguy Installation and Usage</title>
     <link rel="icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -13,58 +13,96 @@
             <li><a href="lilguy.html">Home</a></li>
             <li><a href="lilguy.html#about">About</a></li>
             <li><a href="lilguy.html#features">Features</a></li>
-            <li><a href="installation.html">Installation</a></li>
-            <li><a href="installation.html#usage">How to Use</a></li>
+            <li><a href="installation.html">Getting Started</a></li>
+            <li><a href="installation.html#usage">Using Lilguy</a></li>
         </ul>
     </nav>
 
     <section id="installation">
-        <h1>Installing and Using LilGuy</h1>
-            <h2>Installing For Windows</h2>
-            <h3>Install for Windows</h3>
-            <p>The LilGuy installer supports only the 64bit version of Microsoft Windows. If you are on a modern Windows PC, this is most likely the version of Windows you have.</p>
+        <h1>Getting Started</h1>
+        <nav>
+            <ul class="navbar-mini">
+                <li><a href="installation.html#windows">Install on Windows</a></li>
+                <li><a href="installation.html#mac">Install for Mac</a></li>
+                <li><a href="installation.html#other-systems">Other Systems</a></li>
+                <li><a href="installation.html#other-systems">Using Lilguy</a></li>
+            </ul>
+        </nav>
+            <h2>Installing</h2>
+            <h3 id="windows">Install for Windows</h3>
+            <p>The Lilguy installer supports only the 64bit version of Microsoft Windows. If you are on a modern Windows PC, this is most likely the version of Windows you have.</p>
             
-            <span class="aside-box">If you aren't sure, you can press the <strong>Windows Key</strong> on your keyboard and then type in <strong>About</strong> or <em>About Your PC</em> to pull up the <em>System About</em> page and <strong>check System Type</strong> for 64-bit operating system.</span> 
+            <p>If you aren't sure, you can press the <strong>Windows key</strong> on your keyboard and then type in <em>About</em> or <em>About Your PC</em> to find and open the <em>System About</em> dialog and check the <em>System Type</em> listing under <em>Device Specifications</em> to see if you have the 64-bit version of Windows installed.</p> 
             </div>
             <ol>
                 <li><a href="https://github.com/dylanwh/lilguy/releases/download/v0.1.3/lilguy-0.1.3-x86_64.msi">Download lilguy-0.13-x86_64.msi</a></li>
                 <li>In your downloads folder, find <strong>lilguy-0.1.3-x86_64</strong> and double-click on the file.</li>
+
+                <div class="screenshot-div">
                 <li>Microsoft will pop up a box saying that <em>Windows protected your PC</em> because the file does not have a publisher as an open-source project. Click on <strong>More info</strong>.</li>
-                <img src="images/windows-defender.png" 
-                    alt="screenshot showing the Windows Defender SmartScreen dialog" 
-                    class="installation-image" />
+                <img src="/images/screenshots/windows-defender.png" 
+                    alt="screenshot showing the Windows Defender SmartScreen dialog box" 
+                    class="screenshot" />
+                </div>
 
-                <li>Then click on on <strong>Run anyway</strong> to install the software.</li>
-                <img src="images/windows-defender-runanyway.png" 
-                    alt="Screenshot showing the Windows Defender 'Run Anyway' warning" 
-                    class="installation-image" />
+                <div class="screenshot-div">
+                <li><p>Click on on <strong>Run anyway</strong> to install the software.</p></li>
+                    <img src="/images/screenshots/windows-defender-runanyway.png" 
+                        alt="Screenshot showing the Windows Defender 'Run Anyway' warning box" 
+                        class="screenshot" />
+                </div>
 
-                <li>The LilGuy Setup Wizard should open. <strong>Click next.</strong>             <img src="images/lilguy-setup-install.png" 
-                    alt="Screenshot showing the install step in the LilGuy setup" 
-                    class="setup-image" /></li>
+                <div class="screenshot-div">
+                    <li>The Lilguy Setup Wizard should open. Click <strong>next.</strong></li>
+                        <img src="/images/screenshots/lilguy-setup-wizard.png" 
+                        alt="Screenshot showing the install step" 
+                        class="screenshot" />
+                </div>
 
-                <li>The next page gives licensing information (MIT license). <strong>Click the checkbox</strong> to accept the terms and then click <strong>next</strong></li>
-                <li>The next screen is asking where you would like to install LilGuy. You can select the default folder, or use the <em>Browse</em> button to choose a new location. Once you've made your selection, <strong>click next.</strong></li>
-                <li>Click <strong>Install</strong>.</li>
-                <li>The <em>User Access Control</em> screen will appear. To install, click yes.</li>
-                <li>After installation, you can click <strong>close</strong> on the installer wizard. LilGuy is now installed.</li>
-                <li>For instructions on starting the LilGuy server, see the <a href="#usage">usage</a> section.</li>
+                <div class="screenshot-div">
+                    <li><p>The next page gives licensing information (MIT license).</p>
+                    <p><strong>Click</strong> the checkbox to accept the MIT license for using the software, and then <strong>click next</strong>.</p></li>
+                    <img src="/images/screenshots/lilguy-setup-license.png" alt="screenshot showing the accept license step" class="screenshot" />
+                </div>
+
+                <div class="screenshot-div">
+                <li>The next screen is asking where you would like to install Lilguy. You can select the default folder, or use the <em>Browse</em> button to choose a new location. Once you've made your selection, <strong>click next.</strong></li>
+                <img src="/images/screenshots/lilguy-setup-browse.png" alt="screenshot showing the select installation folder step" class="screenshot" />
+                </div>
+
+                <div class="screenshot-div">
+                    <li>Click <strong>Install</strong>.</li>
+                    <img src="/images/screenshots/lilguy-setup-install.png" alt="screenshot showing the install step" class="screenshot" />
+                </div>
+
+                <li>The <em>User Access Control</em> screen may appear. To install, click <b>Yes.</b></li>
+                <li>After installation, you can click <strong>Close</strong> or <strong>Finish</strong> on the installer wizard. Lilguy is now installed.</li>
+                <p>For instructions on starting the Lilguy server, see the <a href="#usage">usage</a> section.</p>
             </ol>
         
-        <h3>Uninstall for Windows</h3>
+        <h3>Uninstall (for Windows)</h3>
             <ol>
-                <li>Press the <strong>Windows Key</strong> or go to the search bar and type in <em>Add or remove programs</em> and open the <em>Add or remove programs</em> tool.</li>
-                <li>In the search bar, type <em>lilguy</em></li>
-                <li>Click the three dots (...) and select <em>Uninstall</em>.</li>
+                <li>
+                    <p>Open the <em>Add or remove programs</em> tool.</p>
+                    <p>This can be found by pressing the <strong>Windows Key</strong> or going to the search bar and typing in <em>Add or remove programs</em>.</p>
+                </li>
+                
+                    <li>In the search bar, type <em>lilguy</em>.</li>
+                    <div class="screenshot-div">
+                    <img src="images/screenshots/lilguy-uninstall-program-files.png" alt="screenshot showing the add/remove programs dialogue box" id="add-remove"/>
+                    </div>
+                <li>Click the three dots <em>...</em> on the right side and select <em>Uninstall</em> from the dropdown menu.</li>
+                <li>A warning will appear saying the app and its related info will be uninstalled. Click <strong>Uninstall</strong>.</li>
+                <li><p>The <em>User Access Control</em> full-screen menu will appear.</p><p>To finish uninstalling, click <strong>Yes</strong>.</p></li>
             </ol>
-        <h2>Installing For Mac</h2>
+        <h3 id="mac">Installing For Mac</h3>
             <ol>
                 <li>
                     <a href="https://github.com/dylanwh/lilguy/releases/download/v0.1.3/lilguy-0.1.3.pkg">Download lilguy-0.1.3.pkg</a>
                 </li>
             </ol>
 
-        <h2>Install for something else</h2>
+        <h3 id="other-systems">Other Systems</h3>
             <p>Packages for Linux, ArchLinux, and FreeBSD are also available.<br>
             If you are on a different system, you can help out by making a package for that platform.
             </p>
@@ -83,7 +121,7 @@
             </ul>
     </section>
     <section id="usage">
-    <h1>Using LilGuy</h1>
+    <h2>Using Lilguy</h2>
         <ol>
             <li></li>
         </ol>

@@ -1,27 +1,32 @@
 html {
     background-color: #A34A21;
 }
+
 body {
-    
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 60%;
-    background-color: #FEF6D7;
+    width: 80%;
+    background-color: #fff3e3;
     padding: 15px;
-    border-radius: 10px;
     margin: 1.5rem auto 1rem auto;
     border: 1px solid gray;
+    border-radius: 10px;
+}
+
+p {
+    margin: .5em 1em;
 }
 
 h1 {
     color: #551700;
     font-weight: bolder;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 h2 {
     color: #551700;
     font-size: x-large;
+    font-size: 2em;
 }
 
 h3 {
@@ -37,7 +42,7 @@ ul {
 }
 
 li {
-    padding: 10px 0;
+    padding: 1rem;
 }
 
 picture {
@@ -68,6 +73,7 @@ picture {
     list-style-type: circle;
 }
 
+/* https://www.w3schools.com/css/css_navbar.asp */
 .navbar {
     list-style: none;
     margin: 0;
@@ -75,20 +81,72 @@ picture {
     display: flex;
     justify-content: space-around;
     background-color: #A34A21;
+    border: solid 1px black;
     list-style-image: none;
+    border-radius: 8px;
 }
 
 .navbar li {
     display: inline;
+    
 }
 
 .navbar a {
     color: white;
     text-decoration: none;
     padding: 15px;
+    display: inline-block;
+}
+
+.navbar-mini {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #A34A21;
+    border: solid 1px black;
+    list-style-image: none;
+    border-radius: 8px;
+}
+
+.navbar-mini li {
+    display: inline;
+}
+
+.navbar-mini a {
+    color: white;
+    text-decoration: none;
     display: block;
 }
 
+
+.screenshot-div {
+    display: flex;
+    margin: 10px 0;
+}
+.screenshot-div li {
+    justify-content: flex-start;
+}
+
+.screenshot-div img {
+   justify-content: flex-end;
+   border-radius: 5px;
+}
+
+.screenshot {
+    max-width: 300px;
+    justify-content: center;
+    height: auto;
+}
+
+#add-remove {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* https://www.w3schools.com/cssref/atrule_media.php */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -96,6 +154,17 @@ picture {
     }
 
     .navbar a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-mini {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-mini a {
         padding: 10px;
         width: 100%;
         text-align: center;

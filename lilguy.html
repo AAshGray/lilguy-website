@@ -10,11 +10,11 @@
     <body>
     <nav>
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="installation.html#installation">Installation</a></li>
-            <li><a href="installation.html#usage">How to Use</a></li>
+            <li><a href="lilguy.html">Home</a></li>
+            <li><a href="lilguy.html#about">About</a></li>
+            <li><a href="lilguy.html#features">Features</a></li>
+            <li><a href="installation.html">Getting Started</a></li>
+            <li><a href="installation.html#usage">Using Lilguy</a></li>
         </ul>
     </nav>
     <div class="content">
@@ -23,70 +23,64 @@
             <source srcset="images/icon-192x192.png" media="(max-width: 600px)">
             <source srcset="images/icon-512x512.png" media="(min-width: 601px) and (max-width: 1200px)">
             <source srcset="images/apple-touch-icon.png" media="(min-width: 1201px)">
-            <img src="images/icon-512x512.png" alt="Logo of LilGuy with a cartoon hamster's smiling face">
+            <img src="images/icon-512x512.png" alt="Logo of Lilguy with a cartoon hamster's smiling face">
         </picture>
 
-        <h1>LilGuy</h1>
-            <p>LilGuy is a little program that runs Lua scripts and communicates with a SQLLite database. With custom Lua scripts, LilGuy can perform simple tasks such as monitor a network connection, communicate with a smart device, or host a private web page for a home media server or web portal. 
-            <p>People used to need a powerful computer and knowledge of networking technologies to make their own server, but with LilGuy you can set up a server without having to know everything.</p>
-            <p>LilGuy installs and sets up all the pieces someone would need to get started working on a project right away.</p>
+        <h1>Lilguy</h1>
+            <p>Lilguy is a little program that runs Lua scripts and communicates with a SQLLite database. With custom Lua scripts, Lilguy can perform simple tasks such as monitor a network connection, communicate with a smart device, or host a private web page for a home media server or web portal. 
+            <p>People used to need a powerful computer and knowledge of networking technologies to make their own server, but with Lilguy you can set up a server without having to know everything.</p>
+            <p>Lilguy installs and sets up all the pieces someone would need to get started working on a project right away.</p>
 
         <section id="about">
         <h2>About</h2>
-        <h3>What IS LilGuy?</h3>
-            <p>LilGuy was originally imagined as a way to communicate between two WiFI devices on a home network so that when one of the access points experienced a problem it would send a signal to automatically restart the router without anyone needing to intervene. As Dylan worked on this project, he realized that with a few more features it could become useful for all kinds of home projects.</p>
-            <p>LilGuy is an easy way to set up a database server connected to a network to do useful things on a computer, RaspberryPI device, or even a  phone.</p>
+        <h3>What IS Lilguy?</h3>
+            <p>Lilguy was originally imagined as a way to communicate between two WiFI devices on a home network so that when one of the access points experienced a problem it would send a signal to automatically restart the router without anyone needing to intervene. As Dylan worked on this project, he realized that with a few more features it could become useful for all kinds of home projects.</p>
+            <p>Lilguy is an easy way to set up a database server connected to a network to do useful things on a computer, RaspberryPI device, or even a  phone.</p>
         </section>
 
         <section id="features">
         <h2>Features</h2>
-        <h3>What Can LilGuy Do Now?</h3>
+        <h3>What Can Lilguy Do Now?</h3>
         <ul>
-            <li>Use <a href="https://www.lua.org" title="Lua homepage">Lua</a> scripts to respond to input and perform tasks.</li>
-            <li>Use <a href="https://github.com/mitsuhiko/minijinja" title="MiniJinja GitHub repository">MiniJinja</a> for rendering templates </li>
-            <li>Use <a href="https://htmx.org" title="HTMX homepage">HTMX</a> for creating interactive, dynamic web pages.</li>
-            <li>Format web pages automatically with <a href="https://picocss" title="PicoCSS homepage">PicoCSS</a>.</li>
+            
+            <li>Display interactive, dynamic web page content with <a href="https://htmx.org" title="HTMX homepage">HTMX</a>.</li>
+            <li>Respond to input and perform tasks using <a href="https://www.lua.org" title="Lua homepage">Lua</a> scripts.</li>
+            <li>Format user web pages automatically with <a href="https://picocss" title="PicoCSS homepage">PicoCSS</a>.</li>
             <li>Remember and organize information with <a href="https://sqlite.org" title="SQLite home page">SQLite</a>.</li>
         </ul>
-        <h3>What can LilGuy run on?</h3>
+        <h3>What kind of devices can Lilguy be installed on?</h3>
         <ul>
-            <li>RaspberryPi Devices (Pi 3 and newer)</li>
-            <li>Home Routers (ASUS tested)</li>
             <li>Windows computers</li>
-            <li>MacOS</li>
+            <li>MacOS devices (including iPhones or tablets)</li>
             <li>Linux</li>
+            <li>Home Routers (tested with ASUS brand routers)</li>
+            <li>RaspberryPi Devices (Pi 3 and newer)</li>
         </ul>
         <h3>What Kind of Projects Could I Make?</h3>
                 <ul>
-                    <li>Record data from a smart device like a soil moisture tester 🌱</li>
-                    <li>Make your own digital cookbook and recipe manager with only features that you want 🍳</li>
-                    <li>Set up a media storage server for your video collection 📹</li>
+                    <li>Record data from a wireless smart device like a soil moisture tester 🌱</li>
+                    <li>Make a digital cookbook and recipe manager on your tablet or phone 🍳</li>
+                    <li>Create and browse a home library catalog for your CD & DVD collection 💿</li>
                 </ul>
         <h3>What Would I Need to Learn?</h3>
+        <p><strong>Lua syntax</strong> - Lua is used to write scripts for Lilguy</p>
+            <ul>
+                <li class="circle-marker">The <a href="https://www.lua.org/pil/contents.html">Programming in Lua: First Edition ebook</a> is free online.</li>
+                <li class="circle-marker"><a href="https://ebens.me/posts/lua-for-programmers-part-1/">Lua for Programmers</a>, a series of articles by Michael Ebens, is helpful for people already familiar with programming.</li>
+            </ul>
+
+            <p><strong>SQL syntax</strong> - is used to make database tables and store information.</p>
                 <ul>
-                    <li><strong>Lua syntax</strong> - Lua is used to write scripts for LilGuy</li>
-                    <li class="list-text"><em>Lua is also used for:</em></li>
-                        <ul>
-                            <li class="circle-marker">World of Warcraft</li>
-                            <li class="circle-marker">Roblox</li>
-                            <li class="circle-marker">Gary's Mod</li>
-                        </ul>
-                    <li class="list-text">Lua Resources</li>
-                        <li class="circle-marker">The <a href="https://www.lua.org/pil/contents.html">Programming in Lua: First Edition ebook</a> is free online.</li>
-                        <li class="circle-marker"><a href="https://ebens.me/posts/lua-for-programmers-part-1/">Lua for Programmers</a>, a series of articles by Michael Ebens, is helpful for people already familiar with programming.</li>
-                    <li><strong>SQL syntax</strong> - is used to make database tables and store information
-                        <ul>
-                            <li class="list-text">SQL Resources</li>
                             <li class="circle-marker"><a href="https://www.w3schools.com/sql/" title="W3 Schools SQL tutorials page">W3 Schools</a> has a beginner tutorial on SQL.</li>
                             <li class="circle-marker"><a href="https://www.linkedin.com/learning/topics/sql" title="LinkedIn Learning SQL Page">LinkedIn Learning</a> has many popular video tutorials on SQL.</li>
-                        </ul>
                 </ul>
+
         <h2>Upcoming Features</h2>
         <ul>
             <li>Keep your data secure: Seamless integration with Let's Encrypt (HTTPS)</li>
         </ul>
         
-        <h2>Get Started with LilGuy</h2>
+        <h2>Get Started with Lilguy</h2>
         <p>You can begin by installing the correct package for your operating system. See the <a href="installation.html">Installation page</a> to get started.</p>
 
     </body>
