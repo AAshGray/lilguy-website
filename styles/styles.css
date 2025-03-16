@@ -125,6 +125,7 @@ picture {
     display: flex;
     margin: 10px 0;
 }
+
 .screenshot-div li {
     justify-content: flex-start;
 }
@@ -135,9 +136,11 @@ picture {
 }
 
 .screenshot {
-    max-width: 300px;
+    max-width: 500px;
     justify-content: center;
     height: auto;
+    border-radius: 10px;
+    margin-left: 15px;
 }
 
 #add-remove {
