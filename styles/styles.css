@@ -70,9 +70,9 @@ picture img {
     list-style-type: none;
 }
 
-.circle-marker {
+.disc-marker {
     list-style-image: none;
-    list-style-type: circle;
+    list-style-type: disc;
 }
 
 /* https://www.w3schools.com/css/css_navbar.asp */
