@@ -24,8 +24,11 @@ For Linux, entering the following command will create a directory, and inside of
 ```
 tar -xvf lilguy-0.1.3-linux-x86_64.tar.zst
 ```
-1.	In the new terminal window, enter `lilguy new _project-name_` and press enter. The words project-name should be replaced with the name of your project.
-2.	FINISH INSTRUCTIONS
+1.	In the new terminal window, enter `lilguy new project-name` and press enter. Replace project-name should be replaced with the name of the project.
+2.	Make the top level of the project folder the active directory using `cd project-name`.
+3.	The `lilguy serve --open` command will start the LilGuy server process `lilguy serve` and also `--open` a browser window to the LilGuy default web page.
+4.	The terminal window will continue showing output for the LilGuy server process. To shutdown the LilGuy server, press `Ctrl+C` in the terminal. The LilGuy server will also close when the computer is restarted or shut down.
+5.	The app.lua file or the HTML templates in the project-name/templates directory can be updated to make changes to the server. Unless the `lilguy serve` is flagged with `--no-reload`, these will update on the server in real time, allowing changes to be viewed immediately.
 
 ## Deployment
 It is recommended when deploying LilGuy to production or on a publicly accessible server to use `lilguy serve --no-reload`. This will result in performance improvements as the app will not try to reload the file changes every time an update is made to the SQLite database.
